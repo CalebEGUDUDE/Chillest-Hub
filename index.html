@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#023047" />
+    <title>Chillest Hub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Tiny5&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header">
+        <div class="brand-lockup">
+          <div>
+            <h1>Chillest Hub</h1>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <nav class="category-bar" aria-label="Content categories">
+          <button class="category-button is-active" type="button" data-category="links" aria-pressed="true">
+            <span class="category-number">01</span>
+            <span>Links</span>
+          </button>
+          <button class="category-button" type="button" data-category="games" aria-pressed="false">
+            <span class="category-number">02</span>
+            <span>Games</span>
+          </button>
+          <button class="category-button" type="button" data-category="proxies" aria-pressed="false">
+            <span class="category-number">03</span>
+            <span>Pr0x1es</span>
+          </button>
+          <button class="category-button" type="button" data-category="docs" aria-pressed="false">
+            <span class="category-number">04</span>
+            <span>Docs</span>
+          </button>
+          <button class="category-button" type="button" data-category="tools" aria-pressed="false">
+            <span class="category-number">05</span>
+            <span>Tools</span>
+          </button>
+        </nav>
+
+        <section class="hub-grid" aria-live="polite" aria-label="Hub content">
+          <article class="hub-card card-coral" data-category="links">
+            <p class="loading-card">Loading links...</p>
+          </article>
+        </section>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
